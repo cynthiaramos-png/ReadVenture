@@ -58,6 +58,13 @@ h2 {
   text-decoration: none;
 }
 
+.logo2 {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0px;
+}
+
 .barra nav a {
   color: var(--verde-claro);
   text-decoration: none;
