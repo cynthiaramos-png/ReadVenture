@@ -1,0 +1,65 @@
+{# Panel del chango. Necesita las variables "usuario", "chango" (nivel) y "mascota" (felicidad y plátanos). #}
+<section class="tarjeta-chango">
+
+  <!-- Recuadro con la imagen -->
+  <div class="cuadro-imagen">
+    <img src="{{ url_for('static', filename='img/' + chango.etapa.imagen) }}" alt="{{ chango.etapa.nombre }}">
+  </div>
+
+  <!-- Nombre -->
+  <div class="dato dato-nombre">{{ usuario.nombre_chango }}</div>
+
+  <!-- Nivel -->
+  <div class="dato">
+    <strong>Nivel {{ chango.numero }}</strong> · {{ chango.etapa.nombre }}
+  </div>
+
+  <!-- Progreso para subir de nivel -->
+  <div class="dato">
+    <p class="dato-titulo">Progreso <span>{{ chango.porcentaje }}%</span></p>
+    <div class="barra-nivel">
+      <div class="relleno" style="width: {{ chango.porcentaje }}%"></div>
+    </div>
+    {% if chango.siguiente %}
+      {% set faltan = chango.necesarias - chango.hechas %}
+      <p class="texto-barra">
+        Le {{ 'falta' if faltan == 1 else 'faltan' }} {{ faltan }} {{ 'lectura' if faltan == 1 else 'lecturas' }}
+        para ser <strong>{{ chango.siguiente.nombre }}</strong>
+      </p>
+    {% else %}
+      <p class="texto-barra">¡Nivel máximo alcanzado!</p>
+    {% endif %}
+  </div>
+
+  <!-- Felicidad y plátanos -->
+  <div class="dato">
+    <p class="dato-titulo">Felicidad <span>{{ mascota.felicidad }}%</span></p>
+    <div class="barra-nivel">
+      <div class="relleno {{ mascota.animo }}" style="width: {{ mascota.felicidad }}%"></div>
+    </div>
+    <p class="texto-barra">
+      {% if mascota.animo == "feliz" %}{{ usuario.nombre_chango }} está feliz.
+      {% elif mascota.animo == "normal" %}{{ usuario.nombre_chango }} tiene hambre.
+      {% else %}{{ usuario.nombre_chango }} está triste. ¡Dale un plátano!{% endif %}
+    </p>
+
+    <form method="post" action="{{ url_for('alimentar') }}" class="form-platano">
+      <!-- para regresar a la misma página después de darle el plátano -->
+      <input type="hidden" name="volver" value="{{ request.endpoint }}">
+      <span class="platanos">Plátanos: <strong>{{ mascota.platanos }} / {{ mascota.platanos_maximos }}</strong></span>
+      <button type="submit" class="boton"
+              {% if mascota.platanos == 0 or mascota.felicidad >= 100 %}disabled{% endif %}>
+        Dar plátano
+      </button>
+    </form>
+
+    <p class="texto-barra">
+      {% if mascota.minutos_para_platano %}
+        Siguiente plátano en {{ mascota.minutos_para_platano }} min
+      {% else %}
+        Tienes todos los plátanos
+      {% endif %}
+    </p>
+  </div>
+
+</section>

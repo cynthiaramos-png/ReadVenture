@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block contenido %}
+
+<!-- Dos columnas: el chango a la izquierda y los niveles a la derecha -->
+<div class="dos-columnas">
+
+  <div class="columna-chango">
+    {% include "_chango.html" %}
+  </div>
+
+  <section class="columna-niveles">
+    <h2 class="titulo-niveles">Niveles <span class="contador">{{ completadas }} / {{ lista|length }}</span></h2>
+    <ol class="niveles">
+      {% for item in lista %}
+      <li class="nivel {{ item.estado }}">
+        <span class="numero">{{ loop.index }}</span>
+        <div class="info">
+          <strong>{{ item.lectura.titulo }}</strong>
+          <small>{{ categorias.get(item.lectura.categoria, 'Lectura especial') }}</small>
+        </div>
+        {% if item.estado == "completada" %}
+          <a class="boton boton-claro" href="{{ url_for('leccion', lectura_id=item.lectura.id) }}">Repasar</a>
+        {% elif item.estado == "disponible" %}
+          <a class="boton" href="{{ url_for('leccion', lectura_id=item.lectura.id) }}">Leer</a>
+        {% else %}
+          <span class="bloqueado">Bloqueado</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+</div>
+
+{% endblock %}

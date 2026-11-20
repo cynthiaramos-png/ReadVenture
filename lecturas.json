@@ -1,0 +1,548 @@
+[
+  {
+    "id": "cuento-faro",
+    "titulo": "El faro que tenía miedo a la oscuridad",
+    "categoria": "cuentos",
+    "autor": "Cuento original de ReadVenture",
+    "texto": "En un pueblo pequeño junto al mar vivía un faro llamado Ulises. Era alto, blanco y tenía rayas rojas como un caramelo. Todos los barcos confiaban en él, pero Ulises guardaba un secreto: le daba miedo la oscuridad.\n\nCada tarde, cuando el sol empezaba a esconderse, a Ulises le temblaban los ladrillos. «¿Y si esta noche mi luz no es suficiente?», pensaba.\n\nUna noche de tormenta, una gaviota empapada se posó en su barandal. —¿Por qué tiemblas? —le preguntó—. Tú eres el único que no debería temerle a la noche.\n\n—Precisamente por eso —respondió Ulises—. Si yo me apago, todos se pierden.\n\nLa gaviota lo miró un rato y luego señaló el horizonte. Allí, entre las olas, brillaban pequeñas lucecitas: eran los barcos, que encendían sus lámparas siguiendo el camino que él les marcaba.\n\n—Mira —dijo la gaviota—. Tu luz no pelea sola contra la oscuridad. Ayuda a que otros encuentren la suya.\n\nDesde entonces, cuando cae la noche, Ulises ya no tiembla. Cuenta las lucecitas del mar, una por una, hasta que amanece.",
+    "preguntas": [
+      {
+        "enunciado": "¿Qué secreto guardaba Ulises?",
+        "opciones": [
+          "Le daba miedo la oscuridad",
+          "No sabía nadar",
+          "Quería ser un barco",
+          "Estaba enamorado de la gaviota"
+        ],
+        "correcta": 0,
+        "explicacion": "Aunque los barcos confiaban en él, a Ulises le daba miedo la oscuridad."
+      },
+      {
+        "enunciado": "¿Por qué Ulises temía apagarse?",
+        "opciones": [
+          "Porque la gaviota se enojaría",
+          "Porque los barcos se perderían",
+          "Porque perdería sus rayas rojas",
+          "Porque nadie lo volvería a encender"
+        ],
+        "correcta": 1,
+        "explicacion": "Él mismo lo dice: «Si yo me apago, todos se pierden»."
+      },
+      {
+        "enunciado": "¿Qué le hizo ver la gaviota a Ulises?",
+        "opciones": [
+          "Que debía apagarse en las tormentas",
+          "Que los barcos no lo necesitaban",
+          "Que su luz ayuda a otros a encontrar la suya",
+          "Que la noche dura muy poco"
+        ],
+        "correcta": 2,
+        "explicacion": "La gaviota le muestra las lucecitas de los barcos: su luz no pelea sola, ayuda a otros a encontrar la suya."
+      }
+    ]
+  },
+  {
+    "id": "novela-quijote",
+    "titulo": "Un hidalgo de la Mancha",
+    "categoria": "novelas",
+    "autor": "Miguel de Cervantes · Don Quijote de la Mancha (1605)",
+    "texto": "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda.\n\nTenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza.\n\n[…]\n\nEn resolución, él se enfrascó tanto en su letura, que se le pasaban las noches leyendo de claro en claro, y los días de turbio en turbio; y así, del poco dormir y del mucho leer, se le secó el celebro, de manera que vino a perder el juicio.",
+    "preguntas": [
+      {
+        "enunciado": "¿Dónde vivía el hidalgo?",
+        "opciones": [
+          "En un castillo junto al mar",
+          "En un lugar de la Mancha",
+          "En Sevilla",
+          "En la corte de Madrid"
+        ],
+        "correcta": 1,
+        "explicacion": "La primera frase lo dice: «En un lugar de la Mancha…»."
+      },
+      {
+        "enunciado": "¿Qué edad tenía aproximadamente el hidalgo?",
+        "opciones": [
+          "Unos veinte años",
+          "Unos cuarenta años",
+          "Unos cincuenta años",
+          "Unos setenta años"
+        ],
+        "correcta": 2,
+        "explicacion": "«Frisaba la edad de nuestro hidalgo con los cincuenta años»: rondaba los cincuenta."
+      },
+      {
+        "enunciado": "Según el fragmento, ¿por qué el hidalgo perdió el juicio?",
+        "opciones": [
+          "Por dormir poco y leer mucho",
+          "Por una caída del caballo",
+          "Por una enfermedad",
+          "Por perder su hacienda"
+        ],
+        "correcta": 0,
+        "explicacion": "«Del poco dormir y del mucho leer, se le secó el celebro»."
+      }
+    ]
+  },
+  {
+    "id": "articulo-voz-alta",
+    "titulo": "¿Por qué leer en voz alta ayuda a recordar?",
+    "categoria": "articulos",
+    "autor": "Artículo original de ReadVenture",
+    "texto": "¿Alguna vez has repetido en voz alta un número de teléfono para no olvidarlo? No es casualidad. Los psicólogos llaman a este fenómeno «efecto de producción»: tendemos a recordar mejor las palabras que pronunciamos que las que solo leemos en silencio.\n\nUna explicación es que, al leer en voz alta, el cerebro trabaja con más información a la vez. No solo ves las palabras: también mueves la boca para decirlas y escuchas tu propia voz. Esa experiencia extra hace que el recuerdo sea más distintivo, es decir, que destaque entre todo lo demás.\n\nEso no significa que debas leer todo en voz alta. Si lo haces con cada línea, nada destaca y el efecto se diluye. Funciona mejor cuando lo usas de forma selectiva: con las ideas clave, las definiciones o las fechas que necesitas recordar.\n\nLa próxima vez que estudies, prueba a leer en silencio y pronunciar solo lo más importante. Tu memoria —y quizá tus vecinos— lo notarán.",
+    "preguntas": [
+      {
+        "enunciado": "¿Cómo se llama el fenómeno que describe el artículo?",
+        "opciones": [
+          "Efecto eco",
+          "Memoria fotográfica",
+          "Efecto de repetición",
+          "Efecto de producción"
+        ],
+        "correcta": 3,
+        "explicacion": "El artículo lo nombra en el primer párrafo: «efecto de producción»."
+      },
+      {
+        "enunciado": "¿Por qué leer en voz alta ayuda a recordar?",
+        "opciones": [
+          "Porque se lee más despacio",
+          "Porque ver, decir y escuchar hace el recuerdo más distintivo",
+          "Porque cansa menos la vista",
+          "Porque obliga a leer dos veces"
+        ],
+        "correcta": 1,
+        "explicacion": "Al sumar ver, mover la boca y escuchar, el recuerdo destaca más."
+      },
+      {
+        "enunciado": "¿Qué recomienda el artículo?",
+        "opciones": [
+          "Pronunciar solo las ideas más importantes",
+          "Leer todo en voz alta",
+          "No leer nunca en voz alta",
+          "Leer en voz alta solo de noche"
+        ],
+        "correcta": 0,
+        "explicacion": "Si se lee todo en voz alta el efecto se diluye; conviene usarlo de forma selectiva."
+      }
+    ]
+  },
+  {
+    "id": "ciencia-aulladores",
+    "titulo": "Los saraguatos, cantantes de la selva",
+    "categoria": "ciencia",
+    "autor": "Texto original de ReadVenture",
+    "texto": "En las selvas del sur de México y Centroamérica vive uno de los animales más ruidosos del planeta: el mono aullador, al que en muchas regiones llaman saraguato.\n\nSu secreto está en la garganta. Tiene un hueso hioides muy grande y hueco que funciona como caja de resonancia, igual que el cuerpo de una guitarra amplifica el sonido de las cuerdas. Gracias a eso, sus aullidos pueden escucharse a varios kilómetros de distancia entre los árboles.\n\n¿Para qué aúllan tanto? Principalmente para comunicarse con otros grupos: es una forma de decir «este territorio está ocupado» sin necesidad de pelear. Suelen hacerlo al amanecer, y su coro es uno de los sonidos más característicos de lugares como la selva Lacandona.\n\nLos aulladores pasan gran parte del día descansando, porque su dieta, basada sobre todo en hojas, les da poca energía. La pérdida de selva amenaza a varias de sus especies, así que proteger su hogar es clave para que su canto no se apague.",
+    "preguntas": [
+      {
+        "enunciado": "¿Cómo se le llama al mono aullador en muchas regiones de México?",
+        "opciones": [
+          "Capuchino",
+          "Tití",
+          "Saraguato",
+          "Mandril"
+        ],
+        "correcta": 2,
+        "explicacion": "El texto dice que en muchas regiones lo llaman saraguato."
+      },
+      {
+        "enunciado": "¿Qué hace que su aullido sea tan potente?",
+        "opciones": [
+          "Sus pulmones gigantes",
+          "Un hueso hioides grande y hueco que amplifica el sonido",
+          "Que aúllan grupos de cien monos",
+          "Que aúllan desde lo alto de los árboles"
+        ],
+        "correcta": 1,
+        "explicacion": "El hioides funciona como la caja de resonancia de una guitarra."
+      },
+      {
+        "enunciado": "¿Por qué los aulladores descansan tanto?",
+        "opciones": [
+          "Porque aúllan toda la noche",
+          "Porque hace mucho calor",
+          "Porque su dieta de hojas les da poca energía",
+          "Porque viven muchos años"
+        ],
+        "correcta": 2,
+        "explicacion": "Comen sobre todo hojas, que aportan poca energía."
+      }
+    ]
+  },
+  {
+    "id": "cuento-hormigas",
+    "titulo": "La biblioteca de las hormigas",
+    "categoria": "cuentos",
+    "autor": "Cuento original de ReadVenture",
+    "texto": "Debajo de un viejo árbol de mango, las hormigas de la colonia Tres Raíces tenían una costumbre extraña: cada vez que encontraban un pedacito de papel, lo llevaban al hormiguero.\n\nNadie sabía por qué lo hacían, ni siquiera ellas. Simplemente era la tradición. Había túneles enteros llenos de recibos, envolturas de dulces y páginas arrancadas de cuadernos.\n\nUn día nació una hormiga llamada Tila, que tenía algo distinto: sabía leer. Nadie le había enseñado; simplemente miró una envoltura y entendió que decía «sabor fresa».\n\nTila recorrió los túneles y descubrió que entre la basura había tesoros: la receta de un pastel, un poema escrito a lápiz, la carta de un niño a su abuela. Comenzó a ordenarlos por temas y a leerlos en voz alta cada noche.\n\nAl principio solo la escuchaban tres hormigas. Luego diez. Luego cien. Pronto, las hormigas ya no cargaban papeles por costumbre, sino porque querían saber qué nueva historia traía cada uno.\n\nAsí fue como la colonia Tres Raíces dejó de tener un depósito de papeles y empezó a tener una biblioteca.",
+    "preguntas": [
+      {
+        "enunciado": "¿Por qué las hormigas llevaban papeles al hormiguero antes de Tila?",
+        "opciones": [
+          "Para comérselos",
+          "Por tradición, sin saber por qué",
+          "Para construir techos",
+          "Para regalarlos a otras colonias"
+        ],
+        "correcta": 1,
+        "explicacion": "«Nadie sabía por qué lo hacían, ni siquiera ellas. Simplemente era la tradición»."
+      },
+      {
+        "enunciado": "¿Qué tenía de especial Tila?",
+        "opciones": [
+          "Sabía leer",
+          "Era la más fuerte",
+          "Podía volar",
+          "Era la reina"
+        ],
+        "correcta": 0,
+        "explicacion": "Tila descubrió que sabía leer al mirar una envoltura."
+      },
+      {
+        "enunciado": "¿Qué cambió al final del cuento?",
+        "opciones": [
+          "Las hormigas se mudaron del mango",
+          "Dejaron de recoger papeles",
+          "Cargaban papeles porque querían conocer sus historias",
+          "Tila se convirtió en reina"
+        ],
+        "correcta": 2,
+        "explicacion": "Ya no lo hacían por costumbre, sino por curiosidad: así nació la biblioteca."
+      }
+    ]
+  },
+  {
+    "id": "novela-platero",
+    "titulo": "Platero",
+    "categoria": "novelas",
+    "autor": "Juan Ramón Jiménez · Platero y yo (1914)",
+    "texto": "Platero es pequeño, peludo, suave; tan blando por fuera, que se diría todo de algodón, que no lleva huesos. Sólo los espejos de azabache de sus ojos son duros cual dos escarabajos de cristal negro.\n\nLo dejo suelto, y se va al prado, y acaricia tibiamente con su hocico, rozándolas apenas, las florecillas rosas, celestes y gualdas… Lo llamo dulcemente: «¿Platero?», y viene a mí con un trotecillo alegre que parece que se ríe, en no sé qué cascabeleo ideal…\n\nCome cuanto le doy. Le gustan las naranjas mandarinas, las uvas moscateles, todas de ámbar, los higos morados, con su cristalina gotita de miel…\n\nEs tierno y mimoso igual que un niño, que una niña…; pero fuerte y seco por dentro, como de piedra. Cuando paso sobre él, los domingos, por las últimas callejas del pueblo, los hombres del campo, vestidos de limpio y despaciosos, se quedan mirándolo:\n\n—Tiene acero…\n\nTiene acero. Acero y plata de luna, al mismo tiempo.",
+    "preguntas": [
+      {
+        "enunciado": "¿Cómo es Platero por fuera?",
+        "opciones": [
+          "Áspero y duro",
+          "Grande y musculoso",
+          "Pequeño, peludo y suave",
+          "Flaco y nervioso"
+        ],
+        "correcta": 2,
+        "explicacion": "La primera frase lo describe: «pequeño, peludo, suave»."
+      },
+      {
+        "enunciado": "¿Qué parte de Platero es dura «cual dos escarabajos de cristal negro»?",
+        "opciones": [
+          "Sus ojos",
+          "Sus cascos",
+          "Sus orejas",
+          "Sus dientes"
+        ],
+        "correcta": 0,
+        "explicacion": "Los «espejos de azabache de sus ojos» son lo único duro de su aspecto."
+      },
+      {
+        "enunciado": "¿Qué quieren decir los hombres del campo con «Tiene acero»?",
+        "opciones": [
+          "Que lleva una armadura",
+          "Que es fuerte por dentro",
+          "Que es muy caro",
+          "Que es frío y distante"
+        ],
+        "correcta": 1,
+        "explicacion": "Es tierno por fuera, pero «fuerte y seco por dentro, como de piedra»."
+      }
+    ]
+  },
+  {
+    "id": "articulo-papel",
+    "titulo": "Un invento que cambió el mundo: el papel",
+    "categoria": "articulos",
+    "autor": "Artículo original de ReadVenture",
+    "texto": "Antes de que existiera el papel, la humanidad escribía sobre casi cualquier cosa: tablillas de barro, piedra, hojas de palma, pieles de animales o tiras de bambú. Todos estos materiales funcionaban, pero eran pesados, caros o difíciles de conseguir.\n\nLa tradición atribuye a Cai Lun, un funcionario de la corte china, la mejora y difusión del papel alrededor del año 105 de nuestra era. Su método consistía en mezclar fibras vegetales —como corteza de morera, cáñamo y trapos viejos— con agua, machacarlas hasta formar una pasta y extenderla sobre una malla para que se secara. Hallazgos arqueológicos muestran que en China ya se fabricaban formas de papel antes de él, pero su aporte hizo el proceso más práctico.\n\nDurante siglos, la técnica fue un secreto bien guardado. Llegó al mundo islámico hacia el siglo VIII, y de ahí a Europa varios siglos después. En Mesoamérica, por su parte, se desarrolló de forma independiente el papel amate, hecho con corteza de árbol y usado en códices y ceremonias.\n\nGracias al papel, los libros se volvieron más baratos y ligeros, y el conocimiento pudo viajar más lejos que nunca.",
+    "preguntas": [
+      {
+        "enunciado": "¿A quién atribuye la tradición la mejora y difusión del papel?",
+        "opciones": [
+          "A Johannes Gutenberg",
+          "A un escriba egipcio",
+          "A un monje europeo",
+          "A Cai Lun"
+        ],
+        "correcta": 3,
+        "explicacion": "Cai Lun, funcionario de la corte china, alrededor del año 105."
+      },
+      {
+        "enunciado": "¿Qué materiales usaba el método descrito?",
+        "opciones": [
+          "Fibras vegetales y trapos mezclados con agua",
+          "Arena y vidrio",
+          "Barro y paja",
+          "Cuero y cera"
+        ],
+        "correcta": 0,
+        "explicacion": "Corteza de morera, cáñamo y trapos viejos, machacados con agua."
+      },
+      {
+        "enunciado": "¿Qué dice el texto sobre el papel amate?",
+        "opciones": [
+          "Que fue traído de China",
+          "Que se inventó en Europa",
+          "Que se desarrolló de forma independiente en Mesoamérica",
+          "Que se hacía con trapos"
+        ],
+        "correcta": 2,
+        "explicacion": "El amate surgió en Mesoamérica sin relación con el papel chino."
+      }
+    ]
+  },
+  {
+    "id": "ciencia-cerebro",
+    "titulo": "¿Qué pasa en tu cerebro cuando lees?",
+    "categoria": "ciencia",
+    "autor": "Texto original de ReadVenture",
+    "texto": "Leer parece algo natural, pero es un invento muy reciente para nuestra especie. La escritura tiene unos cinco mil años, demasiado poco tiempo para que la evolución haya creado una parte del cerebro dedicada a ella. Entonces, ¿cómo lo logramos?\n\nLos neurocientíficos proponen que el cerebro «recicla» zonas que originalmente servían para otras tareas. Una de las más estudiadas está en la región occipitotemporal izquierda y suele llamarse área de la forma visual de las palabras. Esta región, que se especializaba en reconocer objetos y formas, aprende con la práctica a identificar letras y palabras a gran velocidad.\n\nCuando lees, esa información visual se conecta con las redes del lenguaje: las que procesan los sonidos de las palabras y su significado. Por eso, al principio leemos despacio, juntando letra por letra, y con el tiempo reconocemos palabras completas casi sin esfuerzo.\n\nLa buena noticia es que este «cableado» se fortalece con el uso. Cada página que lees entrena a tu cerebro para leer mejor la siguiente.",
+    "preguntas": [
+      {
+        "enunciado": "¿Por qué el texto dice que leer es un invento reciente?",
+        "opciones": [
+          "Porque los libros tienen cien años",
+          "Porque la escritura tiene unos cinco mil años, poco para la evolución",
+          "Porque los niños aprenden a leer tarde",
+          "Porque antes nadie sabía hablar"
+        ],
+        "correcta": 1,
+        "explicacion": "Cinco mil años es muy poco tiempo en términos evolutivos."
+      },
+      {
+        "enunciado": "¿Qué significa que el cerebro «recicla» zonas?",
+        "opciones": [
+          "Que elimina neuronas viejas",
+          "Que olvida lo que lee",
+          "Que adapta áreas que servían para otras tareas",
+          "Que crea un órgano nuevo"
+        ],
+        "correcta": 2,
+        "explicacion": "Usa regiones que ya existían y las adapta a la lectura."
+      },
+      {
+        "enunciado": "¿Para qué servía originalmente el área de la forma visual de las palabras?",
+        "opciones": [
+          "Para reconocer objetos y formas",
+          "Para escuchar música",
+          "Para controlar el movimiento",
+          "Para recordar olores"
+        ],
+        "correcta": 0,
+        "explicacion": "Se especializaba en reconocer objetos y formas antes de aprender letras."
+      }
+    ]
+  },
+  {
+    "id": "cuento-reloj",
+    "titulo": "El reloj que se negó a avanzar",
+    "categoria": "cuentos",
+    "autor": "Cuento original de ReadVenture",
+    "texto": "En la plaza de un pueblo de montaña había un reloj que llevaba ciento veinte años marcando las horas sin equivocarse. Una mañana de diciembre, sin aviso, sus manecillas se detuvieron a las cuatro y diez.\n\nEl relojero subió con sus herramientas, revisó engranes, resortes y péndulo, y no encontró nada roto. —Está perfecto —dijo, confundido—. Simplemente no quiere avanzar.\n\nEsa misma tarde, una niña llamada Inés subió los ciento doce escalones de la torre. Pegó la oreja a la maquinaria y escuchó algo parecido a un suspiro.\n\n—¿Por qué te detuviste? —preguntó.\n\n—Porque a las cuatro y diez, hace muchos años, una mujer se sentaba en la banca de la plaza a leerle cuentos a su nieto —respondió el reloj—. Ella ya no viene. Pensé que si detenía el tiempo, quizá regresaría.\n\nInés bajó corriendo, tomó un libro de su casa y se sentó en la banca. A las cuatro y diez en punto comenzó a leer en voz alta. Poco a poco se le unieron otros niños, y luego algunos adultos.\n\nAl terminar la historia, se escuchó un clic en lo alto de la torre. Las manecillas marcaban las cuatro y once.",
+    "preguntas": [
+      {
+        "enunciado": "¿Qué encontró el relojero al revisar el reloj?",
+        "opciones": [
+          "Un resorte roto",
+          "Un nido de pájaros",
+          "Nada roto: estaba perfecto",
+          "Una carta escondida"
+        ],
+        "correcta": 2,
+        "explicacion": "«Está perfecto. Simplemente no quiere avanzar»."
+      },
+      {
+        "enunciado": "¿Por qué se detuvo el reloj?",
+        "opciones": [
+          "Porque extrañaba a la mujer que leía cuentos en la plaza",
+          "Porque estaba muy viejo",
+          "Porque hacía mucho frío",
+          "Porque nadie le daba cuerda"
+        ],
+        "correcta": 0,
+        "explicacion": "Pensó que si detenía el tiempo, la mujer regresaría."
+      },
+      {
+        "enunciado": "¿Qué sugiere el final, cuando el reloj marca las cuatro y once?",
+        "opciones": [
+          "Que se descompuso de nuevo",
+          "Que volvió a avanzar porque regresó la costumbre de leer",
+          "Que Inés lo arregló con herramientas",
+          "Que la mujer volvió a la plaza"
+        ],
+        "correcta": 1,
+        "explicacion": "Es una inferencia: al recuperarse la lectura en la plaza, el reloj sigue adelante."
+      }
+    ]
+  },
+  {
+    "id": "novela-frascos",
+    "titulo": "La ciudad que guardaba la lluvia",
+    "categoria": "novelas",
+    "autor": "Fragmento de novela original de ReadVenture",
+    "texto": "Marina tenía doce años cuando descubrió que su abuelo coleccionaba lluvia. No hablaba en sentido figurado: en el sótano de la casa había estanterías llenas de frascos de vidrio, cada uno con una etiqueta escrita a mano. «Tormenta del 14 de agosto de 1987». «Llovizna del día en que nació tu madre». «Granizo que no esperaba nadie».\n\n—¿Para qué guardas esto? —preguntó ella, levantando un frasco hacia la luz del foco.\n\nEl abuelo tardó en contestar. Se limpió los lentes con la orilla de la camisa, como hacía siempre que necesitaba tiempo para pensar.\n\n—Porque esta ciudad se olvida de todo —dijo al fin—. Construyen encima de los ríos, cambian el nombre de las calles, tiran las casas viejas. Pero la lluvia… la lluvia recuerda. Cada gota cayó sobre algo que ya no existe.\n\nMarina miró el frasco con otros ojos. El agua estaba quieta, un poco turbia. No parecía recordar nada.\n\n—Eso no tiene sentido, abuelo.\n\n—Todavía no —respondió él, y le guiñó un ojo—. Pero el próximo martes va a llover, y quiero que me acompañes a la azotea.",
+    "preguntas": [
+      {
+        "enunciado": "¿Qué coleccionaba el abuelo de Marina?",
+        "opciones": [
+          "Fotografías antiguas",
+          "Mapas de la ciudad",
+          "Lentes viejos",
+          "Frascos con lluvia"
+        ],
+        "correcta": 3,
+        "explicacion": "Tenía estanterías con frascos de lluvia, cada uno con su etiqueta."
+      },
+      {
+        "enunciado": "¿Qué hacía el abuelo cuando necesitaba tiempo para pensar?",
+        "opciones": [
+          "Se rascaba la cabeza",
+          "Se limpiaba los lentes con la camisa",
+          "Bajaba al sótano",
+          "Miraba por la ventana"
+        ],
+        "correcta": 1,
+        "explicacion": "«Se limpió los lentes con la orilla de la camisa, como hacía siempre…»."
+      },
+      {
+        "enunciado": "¿Qué idea tiene el abuelo sobre la ciudad?",
+        "opciones": [
+          "Que olvida su pasado, pero la lluvia lo recuerda",
+          "Que es la más bonita del mundo",
+          "Que llueve demasiado",
+          "Que nunca cambia"
+        ],
+        "correcta": 0,
+        "explicacion": "La ciudad borra ríos, calles y casas; la lluvia, según él, recuerda."
+      }
+    ]
+  },
+  {
+    "id": "articulo-bibliotecas",
+    "titulo": "Bibliotecas antiguas, guardianas del saber",
+    "categoria": "articulos",
+    "autor": "Artículo original de ReadVenture",
+    "texto": "Mucho antes de las bibliotecas públicas que conocemos, los gobernantes del mundo antiguo ya entendían el poder de reunir textos en un solo lugar.\n\nUna de las más antiguas de las que tenemos evidencia es la del rey asirio Asurbanipal, en Nínive, en el siglo VII antes de nuestra era. Sus estantes no tenían libros, sino miles de tablillas de arcilla con escritura cuneiforme. Paradójicamente, el incendio que destruyó el palacio ayudó a conservarlas: el fuego endureció la arcilla. Entre esas tablillas se encontraron versiones de la Epopeya de Gilgamesh, uno de los relatos más antiguos de la humanidad.\n\nSiglos después, en Egipto, la Biblioteca de Alejandría se convirtió en símbolo del conocimiento. Sus responsables buscaban reunir obras de todo el mundo conocido y copiarlas en rollos de papiro. Su decadencia no ocurrió en un solo día, como suele contarse, sino a lo largo de siglos de recortes, conflictos y abandono.\n\nAmbas historias dejan una lección: el conocimiento no se pierde solo por grandes catástrofes, sino también por descuido. Cuidar una biblioteca —o el hábito de leer— es un trabajo de todos los días.",
+    "preguntas": [
+      {
+        "enunciado": "¿En qué material estaban escritos los textos de la biblioteca de Asurbanipal?",
+        "opciones": [
+          "Papiro",
+          "Tablillas de arcilla",
+          "Pergamino",
+          "Papel amate"
+        ],
+        "correcta": 1,
+        "explicacion": "Miles de tablillas de arcilla con escritura cuneiforme."
+      },
+      {
+        "enunciado": "¿Por qué el incendio ayudó a conservar las tablillas?",
+        "opciones": [
+          "Porque el humo las ocultó",
+          "Porque los soldados las rescataron",
+          "Porque ya estaban copiadas",
+          "Porque el fuego endureció la arcilla"
+        ],
+        "correcta": 3,
+        "explicacion": "El calor coció la arcilla y la hizo más resistente."
+      },
+      {
+        "enunciado": "¿Qué idea defiende el último párrafo?",
+        "opciones": [
+          "Que el conocimiento también se pierde por descuido y hay que cuidarlo a diario",
+          "Que las bibliotecas antiguas eran mejores",
+          "Que los incendios son la mayor amenaza para los libros",
+          "Que solo los reyes deben cuidar las bibliotecas"
+        ],
+        "correcta": 0,
+        "explicacion": "La lección es que el descuido también destruye el conocimiento."
+      }
+    ]
+  },
+  {
+    "id": "ciencia-pulpos",
+    "titulo": "Pulpos: inteligencia con ocho brazos",
+    "categoria": "ciencia",
+    "autor": "Texto original de ReadVenture",
+    "texto": "Si tuvieras que imaginar un extraterrestre, quizá se parecería a un pulpo. Estos animales tienen tres corazones, sangre azul y un sistema nervioso que no se parece al de casi ningún otro ser vivo.\n\nDos de sus corazones bombean sangre hacia las branquias, y el tercero la envía al resto del cuerpo. Su sangre es azul porque transporta oxígeno con una molécula llamada hemocianina, que contiene cobre, en lugar de la hemoglobina, rica en hierro, que tenemos los humanos.\n\nLo más sorprendente es su forma de pensar. Un pulpo tiene unos quinientos millones de neuronas, y cerca de dos tercios están en sus brazos, no en su cabeza. Esto permite que cada brazo explore, toque y «pruebe» el entorno con bastante independencia, mientras el cerebro central coordina los objetivos generales.\n\nEn laboratorios y acuarios se ha observado a pulpos abrir frascos, escapar de sus tanques y reconocer a personas concretas. Estudiarlos nos recuerda que la inteligencia puede surgir por caminos muy distintos al nuestro.",
+    "preguntas": [
+      {
+        "enunciado": "¿Por qué la sangre del pulpo es azul?",
+        "opciones": [
+          "Porque vive en el mar",
+          "Porque tiene tres corazones",
+          "Porque usa hemocianina, que contiene cobre",
+          "Porque come algas azules"
+        ],
+        "correcta": 2,
+        "explicacion": "La hemocianina lleva cobre; nuestra hemoglobina lleva hierro."
+      },
+      {
+        "enunciado": "¿Dónde está la mayoría de las neuronas de un pulpo?",
+        "opciones": [
+          "En su cabeza",
+          "En sus brazos",
+          "En sus corazones",
+          "En sus ojos"
+        ],
+        "correcta": 1,
+        "explicacion": "Cerca de dos tercios están en los brazos."
+      },
+      {
+        "enunciado": "¿Cuál es la idea principal del último párrafo?",
+        "opciones": [
+          "Que los pulpos son peligrosos",
+          "Que deben vivir en acuarios",
+          "Que son extraterrestres",
+          "Que la inteligencia puede surgir por caminos distintos al humano"
+        ],
+        "correcta": 3,
+        "explicacion": "Los pulpos muestran otra forma de ser inteligente."
+      }
+    ]
+  },
+  {
+    "id": "especial-gran-prueba",
+    "titulo": "El chango que aprendió a leer",
+    "categoria": "especial",
+    "autor": "Leyenda original de ReadVenture",
+    "texto": "Cuentan los viejos de la selva que hubo una vez un chango que no sabía estar quieto. Saltaba de rama en rama, robaba mangos, despertaba a los tucanes y se aburría de todo en cinco minutos.\n\nUn día encontró, atrapado entre las raíces de una ceiba, un libro que algún viajero había olvidado. Lo abrió esperando que tuviera algo de comer. Solo había manchitas negras sobre hojas blancas.\n\n—Qué cosa tan inútil —dijo, y estaba a punto de tirarlo cuando una vieja tortuga lo detuvo.\n\n—Esas manchitas guardan voces —le explicó—. Voces de gente que vivió hace siglos, en lugares que nunca verás. Si aprendes a escucharlas, ya nunca te aburrirás.\n\nEl chango no le creyó, pero la curiosidad le ganó. Durante semanas, la tortuga le enseñó a reconocer cada letra. Al principio era desesperante: confundía la «b» con la «d» y quería rendirse cada tarde. Pero un amanecer, sin darse cuenta, leyó una frase completa. Y luego otra. Y luego una página entera.\n\nEse día descubrió algo que ningún mango le había dado: podía viajar sin moverse de su rama.\n\nDicen que desde entonces, cuando un chango aprende a leer, su pelaje brilla un poco más. Y si lees esto, tal vez el tuyo también.",
+    "preguntas": [
+      {
+        "enunciado": "¿Qué esperaba encontrar el chango al abrir el libro?",
+        "opciones": [
+          "Un mapa del tesoro",
+          "Algo de comer",
+          "Una carta de la tortuga",
+          "Dibujos de animales"
+        ],
+        "correcta": 1,
+        "explicacion": "«Lo abrió esperando que tuviera algo de comer»."
+      },
+      {
+        "enunciado": "Según la tortuga, ¿qué guardan las «manchitas negras»?",
+        "opciones": [
+          "Semillas",
+          "Secretos de la selva",
+          "Voces de gente de otros tiempos y lugares",
+          "Instrucciones para trepar"
+        ],
+        "correcta": 2,
+        "explicacion": "«Voces de gente que vivió hace siglos, en lugares que nunca verás»."
+      },
+      {
+        "enunciado": "¿Qué descubrió el chango al aprender a leer?",
+        "opciones": [
+          "Que podía viajar sin moverse de su rama",
+          "Que los libros se pueden comer",
+          "Que la tortuga le había mentido",
+          "Que ya no necesitaba mangos"
+        ],
+        "correcta": 0,
+        "explicacion": "Leer le permitió viajar con la imaginación."
+      }
+    ]
+  }
+]

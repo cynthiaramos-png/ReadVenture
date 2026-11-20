@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block contenido %}
+<section class="intro">
+  <img src="{{ url_for('static', filename='img/' + etapas[0].imagen) }}" alt="Chango">
+
+  <h1>ReadVenture</h1>
+  <p class="intro-texto">Lee un poco cada día, contesta preguntas y haz que tu chango suba de nivel.</p>
+
+  <ol class="intro-pasos">
+    <li>Elige qué te gusta leer.</li>
+    <li>Lee y responde las preguntas.</li>
+    <li>Desbloquea niveles y mira crecer a tu chango.</li>
+    <li>Cuídalo: dale plátanos para que no se ponga triste.</li>
+  </ol>
+
+  <a class="boton boton-grande" href="{{ url_for('registro') }}">Comenzar a leer</a>
+  <p>¿Ya tienes cuenta? <a href="{{ url_for('login') }}">Inicia sesión</a></p>
+</section>
+{% endblock %}

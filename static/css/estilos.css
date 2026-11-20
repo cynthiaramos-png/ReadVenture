@@ -1,0 +1,773 @@
+/* ===== Colores (todos los verdes en un solo lugar) ===== */
+:root {
+  --verde-oscuro: #1f5130;
+  --verde: #2e7d4f;
+  --verde-medio: #4caf6e;
+  --verde-claro: #a8dbb3;
+  --verde-fondo: #eaf5ec;
+  --verde-suave: #d6ecdb;
+  --texto: #1f2d24;
+  --gris: #6b7a70;
+  --borde: #cfe3d4;
+  --rojo: #c0392b;
+  --amarillo: #e2b93b;
+}
+
+/* ===== Estilos generales ===== */
+body {
+  margin: 0;
+  font-family: "Nunito", Verdana, Arial, sans-serif;
+  font-size: 16px;
+  color: var(--texto);
+  background-color: var(--verde-fondo);
+}
+
+a {
+  color: var(--verde);
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 19px;
+  margin-top: 0;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ===== Barra de arriba ===== */
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: var(--verde-oscuro);
+}
+
+.logo {
+  color: white;
+  font-size: 21px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.barra nav a {
+  color: var(--verde-claro);
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.barra nav a.activo,
+.barra nav a:hover {
+  color: white;
+  background-color: var(--verde);
+}
+
+/* ===== Cajas blancas ===== */
+.caja {
+  background-color: white;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* ===== Botones ===== */
+.boton {
+  display: inline-block;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 3px solid var(--verde-oscuro);
+  background-color: var(--verde);
+  color: white;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: var(--verde-oscuro);
+}
+
+.boton-claro {
+  background-color: var(--verde-fondo);
+  color: var(--verde-oscuro);
+  border-bottom-color: var(--borde);
+}
+
+.boton-claro:hover {
+  background-color: var(--verde-claro);
+}
+
+.boton-salir {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  background-color: white;
+  color: var(--rojo);
+  border: 2px solid var(--rojo);
+}
+
+.boton-salir:hover {
+  background-color: var(--rojo);
+  color: white;
+}
+
+/* ===== Tarjeta del chango (panel izquierdo) ===== */
+/* De arriba hacia abajo: imagen, nombre, nivel, progreso y felicidad */
+.tarjeta-chango {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+/* Recuadro de la imagen: cuadrado y centrado */
+.cuadro-imagen {
+  width: 75%;
+  max-width: 240px;
+  aspect-ratio: 1 / 1;     /* siempre cuadrado */
+  margin: 0 auto 4px auto;
+  background-color: white;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cuadro-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* la imagen se ve completa, sin recortarse */
+}
+
+/* Cada dato va en su propio rectángulo */
+.dato {
+  padding: 10px 14px;
+  background-color: white;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 10px;
+  color: var(--verde-oscuro);
+}
+
+.dato-nombre {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.dato-titulo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 6px 0;
+  font-weight: 800;
+}
+
+/* Barra de nivel estilo videojuego */
+.barra-nivel {
+  height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.barra-nivel .relleno {
+  height: 100%;
+  background-color: var(--verde-medio);
+}
+
+/* Color de la barra de felicidad según el ánimo */
+.barra-nivel .relleno.feliz {
+  background-color: var(--verde-medio);
+}
+
+.barra-nivel .relleno.normal {
+  background-color: var(--amarillo);
+}
+
+.barra-nivel .relleno.triste {
+  background-color: var(--rojo);
+}
+
+.texto-barra {
+  margin: 6px 0 0 0;
+  font-size: 14px;
+  color: var(--gris);
+}
+
+/* Fila con el contador de plátanos y el botón */
+.form-platano {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.platanos {
+  font-size: 14px;
+}
+
+.boton:disabled {
+  background-color: var(--borde);
+  border-bottom-color: var(--borde);
+  color: var(--gris);
+  cursor: not-allowed;
+}
+
+/* ===== Marco grande (Inicio, Perfil y Lectura) ===== */
+/* Un solo rectángulo con borde grueso; adentro, panel izquierdo + contenido */
+.dos-columnas,
+.pantalla-lectura {
+  display: flex;
+  align-items: stretch;              /* las dos columnas miden lo mismo de alto */
+  min-height: calc(100vh - 110px);   /* llena la pantalla debajo de la barra */
+  background-color: white;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* Panel izquierdo: más o menos un tercio del ancho */
+.columna-chango {
+  width: 30%;
+  min-width: 260px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  background-color: var(--verde-claro);
+  border-right: 3px solid var(--verde-oscuro);
+}
+
+/* Lado derecho: el resto del ancho */
+.columna-niveles {
+  flex: 1;
+  padding: 20px;
+}
+
+.columna-angosta {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== Lista de niveles ===== */
+/* Cada nivel es un rectángulo separado; se alternan dos tonos como franjas de cruce peatonal */
+.titulo-niveles {
+  margin: 0 0 10px 0;
+}
+
+.contador {
+  float: right;
+  font-size: 15px;
+  color: var(--gris);
+}
+
+.niveles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nivel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  padding: 18px 18px;
+  border: 3px solid var(--borde);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.nivel:nth-child(even) {
+  background-color: var(--verde-suave);
+}
+
+.nivel .numero {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--borde);
+  color: var(--verde-oscuro);
+  font-weight: 800;
+}
+
+.nivel .info {
+  flex: 1;
+}
+
+.nivel .info small {
+  display: block;
+  color: var(--gris);
+}
+
+.nivel.disponible {
+  border-color: var(--verde);
+}
+
+.nivel.disponible .numero {
+  background-color: var(--verde);
+  color: white;
+}
+
+.nivel.completada .numero {
+  background-color: var(--verde-medio);
+  color: white;
+}
+
+.nivel.bloqueada .info strong {
+  color: #9aa69e;
+}
+
+.bloqueado {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: var(--borde);
+  color: var(--gris);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ===== Pantalla de bienvenida ===== */
+.intro {
+  max-width: 440px;
+  margin: 30px auto;
+  padding: 28px 20px;
+  text-align: center;
+  background-color: var(--verde-claro);
+  border-radius: 16px;
+}
+
+.intro img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+  background-color: white;
+  border: 4px solid white;
+  border-radius: 16px;
+}
+
+.intro h1 {
+  margin: 12px 0 4px 0;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--verde-oscuro);
+}
+
+.intro-texto {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--verde-oscuro);
+}
+
+.intro-pasos {
+  text-align: left;
+  margin: 18px 0;
+  padding: 14px 14px 14px 36px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.intro-pasos li {
+  padding: 3px 0;
+}
+
+.boton-grande {
+  display: block;
+  padding: 14px;
+  font-size: 18px;
+}
+
+/* ===== Formularios ===== */
+.formulario {
+  max-width: 420px;
+  margin: 30px auto;
+}
+
+.formulario label,
+.formulario-perfil label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 4px;
+  border: 2px solid var(--borde);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: var(--verde-medio);
+  outline: none;
+}
+
+.formulario .boton,
+.formulario-perfil .boton {
+  margin-top: 16px;
+}
+
+.etiqueta {
+  margin: 16px 0 4px 0;
+  font-weight: 700;
+}
+
+.opcion {
+  display: block;
+  padding: 6px 0;
+  font-weight: normal !important;
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--verde);
+}
+
+.error {
+  color: var(--rojo);
+  background-color: #fdecea;
+  border: 1px solid var(--rojo);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.exito {
+  color: var(--verde-oscuro);
+  background-color: var(--verde-fondo);
+  border: 1px solid var(--verde-medio);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* ===== Perfil ===== */
+.datos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.datos th,
+.datos td {
+  text-align: left;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--borde);
+}
+
+.datos th {
+  width: 45%;
+  color: var(--gris);
+  font-weight: 700;
+}
+
+/* ===== Lectura ===== */
+.lectura {
+  margin-top: 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.lectura h1 {
+  line-height: 1.3;
+}
+
+.lectura .categoria,
+.lectura .autor {
+  font-family: "Nunito", Verdana, sans-serif;
+  font-size: 14px;
+  color: var(--gris);
+  margin: 0 0 5px 0;
+}
+
+/* ===== Preguntas ===== */
+.pregunta {
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+  padding: 10px 15px;
+}
+
+.pregunta legend {
+  font-weight: 800;
+  padding: 0 5px;
+}
+
+/* ===== Resultado ===== */
+.puntaje {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--verde-oscuro);
+}
+
+.mensaje {
+  padding: 10px;
+}
+
+.subio {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border: 2px solid var(--verde-medio);
+  background-color: var(--verde-fondo);
+}
+
+.subio img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.revision {
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid var(--borde);
+  border-radius: 6px;
+  background-color: #f6faf7;
+}
+
+.revision p {
+  margin: 4px 0;
+}
+
+.revision.bien {
+  border-left-color: var(--verde-medio);
+}
+
+.revision.mal {
+  border-left-color: var(--rojo);
+}
+
+.explicacion {
+  color: var(--gris);
+  font-style: italic;
+}
+
+.acciones .boton {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== Pantalla de lectura: panel de niveles + libro ===== */
+/* (el marco grande está definido arriba junto con .dos-columnas) */
+.panel-niveles {
+  width: 28%;
+  min-width: 230px;
+  flex-shrink: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--verde-fondo);
+  border-right: 3px solid var(--verde-oscuro);
+}
+
+.panel-niveles h2 {
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.panel-niveles ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.volver {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Cada nivel del panel es un rectángulo chico */
+.mini-nivel {
+  display: block;
+  margin-bottom: 10px;
+  padding: 14px 12px;
+  border: 3px solid var(--borde);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--verde-oscuro);
+  background-color: white;
+}
+
+a.mini-nivel:hover {
+  background-color: var(--verde-fondo);
+}
+
+.mini-nivel.actual {
+  background-color: var(--verde);
+  border-color: var(--verde);
+  color: white;
+}
+
+.mini-nivel.completada {
+  background-color: var(--verde-suave);
+}
+
+.mini-nivel.bloqueada {
+  color: #9aa69e;
+  background-color: #f3f5f3;
+}
+
+/* Zona central: flecha | libro | flecha, repartidos a lo ancho */
+.zona-libro {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 30px 20px;
+}
+
+/* El libro es un rectángulo vertical (más alto que ancho) */
+.libro {
+  flex: 0 1 400px;
+  min-height: 600px;
+  padding: 30px 34px 20px 34px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffdf6;
+  border: 2px solid var(--verde-oscuro);
+  border-left: 12px solid var(--verde-oscuro); /* el "lomo" del libro */
+  border-radius: 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.libro h1 {
+  line-height: 1.3;
+}
+
+.libro p {
+  margin: 0 0 1em 0;
+}
+
+.libro .categoria,
+.libro .autor {
+  font-family: "Nunito", Verdana, sans-serif;
+  font-size: 14px;
+  color: var(--gris);
+  margin: 0 0 5px 0;
+}
+
+.libro form {
+  font-family: "Nunito", Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* El número de página siempre queda hasta abajo del libro */
+.libro .numero-pagina {
+  margin-bottom: 0;
+  margin-top: auto;
+  padding-top: 16px;
+  text-align: center;
+  font-family: "Nunito", Verdana, sans-serif;
+  font-size: 13px;
+  color: var(--gris);
+}
+
+.flecha {
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+  background-color: var(--verde);
+  border-bottom: 4px solid var(--verde-oscuro);
+  border-radius: 10px;
+}
+
+.flecha:hover {
+  background-color: var(--verde-oscuro);
+}
+
+.flecha.apagada {
+  background-color: var(--borde);
+  border-bottom-color: var(--borde);
+  color: white;
+}
+
+/* ===== Pantallas angostas (celular) ===== */
+@media (max-width: 760px) {
+  .dos-columnas,
+  .pantalla-lectura {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  /* En celular el panel izquierdo pasa arriba (o abajo) y ocupa todo el ancho */
+  .columna-chango,
+  .panel-niveles {
+    width: auto;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 3px solid var(--verde-oscuro);
+  }
+
+  .columna-niveles {
+    padding: 14px;
+  }
+
+  .nivel {
+    padding: 14px 12px;
+  }
+
+  /* En celular el libro va primero y los niveles debajo */
+  .panel-niveles {
+    order: 2;
+    border-bottom: none;
+    border-top: 3px solid var(--verde-oscuro);
+  }
+
+  .zona-libro {
+    gap: 6px;
+    padding: 14px 8px;
+  }
+
+  .libro {
+    flex: 1;
+    min-height: 420px;
+    padding: 20px 16px 14px 16px;
+    border-left-width: 8px;
+  }
+
+  .flecha {
+    width: 36px;
+    height: 46px;
+    line-height: 42px;
+    font-size: 20px;
+  }
+}

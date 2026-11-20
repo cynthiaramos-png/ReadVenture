@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block contenido %}
+
+<div class="dos-columnas">
+
+  <div class="columna-chango">
+    {% include "_chango.html" %}
+    <a class="boton boton-salir" href="{{ url_for('logout') }}">Cerrar sesión</a>
+  </div>
+
+  <div class="columna-niveles">
+    <!-- Información general -->
+    <section class="caja">
+      <h2>Mi perfil</h2>
+      <table class="datos">
+        <tr><th>Usuario</th><td>{{ usuario.usuario }}</td></tr>
+        <tr><th>Miembro desde</th><td>{{ usuario.creado_en }}</td></tr>
+        <tr><th>Lecturas completadas</th><td>{{ completadas }} de {{ total }}</td></tr>
+        <tr><th>Mis gustos</th><td>{{ gustos | join(', ') }}</td></tr>
+      </table>
+    </section>
+
+    <!-- Editar datos -->
+    <section class="caja">
+      <h2>Editar datos</h2>
+
+      {% if error %}<p class="error">{{ error }}</p>{% endif %}
+      {% if mensaje %}<p class="exito">{{ mensaje }}</p>{% endif %}
+
+      <form method="post" class="formulario-perfil">
+        <label for="nombre_chango">Nombre de tu chango</label>
+        <input type="text" id="nombre_chango" name="nombre_chango" maxlength="30" value="{{ usuario.nombre_chango }}">
+
+        <p class="etiqueta">¿Qué te gusta leer?</p>
+        {% for clave, nombre in categorias.items() %}
+        <label class="opcion">
+          <input type="checkbox" name="categorias" value="{{ clave }}" {% if clave in actuales %}checked{% endif %}>
+          {{ nombre }}
+        </label>
+        {% endfor %}
+
+        <button type="submit" class="boton">Guardar cambios</button>
+      </form>
+    </section>
+  </div>
+
+</div>
+
+{% endblock %}

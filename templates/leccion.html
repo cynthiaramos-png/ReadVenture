@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block contenido %}
+
+<div class="pantalla-lectura">
+
+  <!-- Panel izquierdo: lista de niveles -->
+  <aside class="panel-niveles">
+    <a class="volver" href="{{ url_for('inicio') }}">&larr; Inicio</a>
+    <h2>Niveles</h2>
+    <ol>
+      {% for item in lista %}
+      <li>
+        {% if item.lectura.id == lectura.id %}
+          <span class="mini-nivel actual">{{ loop.index }}. {{ item.lectura.titulo }}</span>
+        {% elif item.estado == "bloqueada" %}
+          <span class="mini-nivel bloqueada">{{ loop.index }}. Bloqueado</span>
+        {% else %}
+          <a class="mini-nivel {{ item.estado }}" href="{{ url_for('leccion', lectura_id=item.lectura.id) }}">{{ loop.index }}. {{ item.lectura.titulo }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </aside>
+
+  <!-- Centro: el libro con sus flechas -->
+  <section class="zona-libro">
+
+    <!-- Flecha izquierda (página anterior) -->
+    {% if pagina > 1 %}
+      <a class="flecha" href="{{ url_for('leccion', lectura_id=lectura.id, pagina=pagina - 1) }}" aria-label="Página anterior">&#8592;</a>
+    {% else %}
+      <span class="flecha apagada">&#8592;</span>
+    {% endif %}
+
+    <div class="libro">
+      {% if not es_pagina_de_preguntas %}
+
+        {% if pagina == 1 %}
+          <p class="categoria">{{ categorias.get(lectura.categoria, 'Lectura especial') }}</p>
+          <h1>{{ lectura.titulo }}</h1>
+          <p class="autor">{{ lectura.autor }}</p>
+        {% endif %}
+
+        {% for parrafo in parrafos %}
+          <p>{{ parrafo }}</p>
+        {% endfor %}
+
+      {% else %}
+
+        <!-- Última página: las preguntas -->
+        <form method="post" action="{{ url_for('leccion', lectura_id=lectura.id) }}">
+          <h2>Preguntas</h2>
+          {% for pregunta in lectura.preguntas %}
+            {% set num = loop.index0 %}
+            <fieldset class="pregunta">
+              <legend>{{ loop.index }}. {{ pregunta.enunciado }}</legend>
+              {% for opcion in pregunta.opciones %}
+                <label class="opcion">
+                  <input type="radio" name="pregunta{{ num }}" value="{{ loop.index0 }}" required>
+                  {{ opcion }}
+                </label>
+              {% endfor %}
+            </fieldset>
+          {% endfor %}
+          <button type="submit" class="boton">Enviar respuestas</button>
+        </form>
+
+      {% endif %}
+
+      <p class="numero-pagina">Página {{ pagina }} de {{ total_paginas }}</p>
+    </div>
+
+    <!-- Flecha derecha (página siguiente) -->
+    {% if pagina < total_paginas %}
+      <a class="flecha" href="{{ url_for('leccion', lectura_id=lectura.id, pagina=pagina + 1) }}" aria-label="Página siguiente">&#8594;</a>
+    {% else %}
+      <span class="flecha apagada">&#8594;</span>
+    {% endif %}
+
+  </section>
+</div>
+
+{% endblock %}

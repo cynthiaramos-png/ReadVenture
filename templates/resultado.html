@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block contenido %}
+<div class="columna-angosta">
+
+<section class="caja">
+  <h1>{{ lectura.titulo }}</h1>
+  <p class="puntaje">Obtuviste {{ aciertos }} de {{ total }}</p>
+
+  {% if aprobada %}
+    <p class="mensaje exito">¡Lectura aprobada!</p>
+    {% if premio %}
+      <p>Ganaste <strong>1 plátano</strong> y {{ usuario.nombre_chango }} se puso más feliz.</p>
+    {% endif %}
+  {% else %}
+    <p class="mensaje error">Necesitas al menos 2 respuestas correctas para aprobar. Inténtalo otra vez.</p>
+  {% endif %}
+</section>
+
+{% if subio %}
+<section class="caja subio">
+  <img src="{{ url_for('static', filename='img/' + etapa.imagen) }}" alt="{{ etapa.nombre }}">
+  <div>
+    <h2>¡{{ usuario.nombre_chango }} subió de nivel!</h2>
+    <p>Ahora es <strong>{{ etapa.nombre }}</strong>. Se desbloquearon nuevas lecturas.</p>
+  </div>
+</section>
+{% endif %}
+
+<!-- Revisión de cada pregunta -->
+<section class="caja">
+  <h2>Revisión</h2>
+  {% for r in revision %}
+    <div class="revision {{ 'bien' if r.correcta else 'mal' }}">
+      <p><strong>{{ loop.index }}. {{ r.pregunta.enunciado }}</strong></p>
+      {% if r.correcta %}
+        <p>Correcto: {{ r.pregunta.opciones[r.pregunta.correcta] }}</p>
+      {% else %}
+        <p>Tu respuesta: {{ r.pregunta.opciones[r.elegida] if r.elegida >= 0 else 'Sin responder' }}</p>
+        <p>Respuesta correcta: {{ r.pregunta.opciones[r.pregunta.correcta] }}</p>
+      {% endif %}
+      <p class="explicacion">{{ r.pregunta.explicacion }}</p>
+    </div>
+  {% endfor %}
+</section>
+
+<p class="acciones">
+  <a class="boton" href="{{ url_for('inicio') }}">Volver a los niveles</a>
+  <a class="boton boton-claro" href="{{ url_for('leccion', lectura_id=lectura.id) }}">Intentar de nuevo</a>
+</p>
+
+</div>
+{% endblock %}
